@@ -5,13 +5,13 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class GoogleSearch {
+public class GoogleSearch2 {
 
     protected WebDriver driver;
     private final WebElement searchField;
     protected String text;
 
-    public GoogleSearch(WebDriver driver, String text) {
+    public GoogleSearch2(WebDriver driver, String text) {
         this.text = text;
         this.driver = driver;
         searchField = driver.findElement(By.id("realbox"));

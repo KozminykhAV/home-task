@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class GoogleSearchResult extends GoogleSearch {
+public class GoogleSearchResult2 extends GoogleSearch2 {
 
     private final List<WebElement> result;
 
-    public GoogleSearchResult(WebDriver driver, String text) {
+    public GoogleSearchResult2(WebDriver driver, String text) {
         super(driver, text);
         result = driver.findElements(By.xpath("//a[@href]"));
     }
