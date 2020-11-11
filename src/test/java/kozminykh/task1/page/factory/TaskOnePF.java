@@ -1,5 +1,6 @@
 package kozminykh.task1.page.factory;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +14,7 @@ public class TaskOnePF {
 
     private WebDriver driver;
 
-    @FindBy(how = How.ID, id = "realbox")
+    @FindBy(how = How.NAME, name = "q")
     WebElement searchField;
 
     @FindAll(@FindBy(how = How.XPATH, xpath = "//a[@href]"))

@@ -15,7 +15,7 @@ public class TaskTwoPF {
     private final WebDriver driver;
     private boolean isExist;
 
-    @FindBy(how = How.ID, id = "realbox")
+    @FindBy(how = How.NAME, name = "q")
     WebElement searchField;
 
     @FindAll(@FindBy(how = How.XPATH, xpath = "//a[@href]"))
@@ -66,9 +66,9 @@ public class TaskTwoPF {
     }
 
     private void chooseTab() {
-        List<WebElement> standardRate = driver.findElements(By.id("tab-defaultRate"));
+        List<WebElement> standardRate = driver.findElements(By.id("rc-tabs-1-tab-defaultRate"));
         while (standardRate.isEmpty()) {
-            standardRate = driver.findElements(By.id("tab-defaultRate"));
+            standardRate = driver.findElements(By.id("rc-tabs-1-tab-defaultRate"));
         }
         standardRate.get(0).click();
     }

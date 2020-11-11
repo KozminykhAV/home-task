@@ -15,9 +15,9 @@ public class BankWebsite {
     }
 
     public boolean checkExchangeRates(String unit) {
-        List<WebElement> standardRate = driver.findElements(By.id("tab-defaultRate"));
+        List<WebElement> standardRate = driver.findElements(By.id("rc-tabs-1-tab-defaultRate"));
         while (standardRate.isEmpty()) {
-            standardRate = driver.findElements(By.id("tab-defaultRate"));
+            standardRate = driver.findElements(By.id("rc-tabs-1-tab-defaultRate"));
         }
         standardRate.get(0).click();
 

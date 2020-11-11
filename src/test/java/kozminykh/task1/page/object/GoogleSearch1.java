@@ -14,7 +14,7 @@ public class GoogleSearch1 {
     public GoogleSearch1(WebDriver driver, String text) {
         this.text = text;
         this.driver = driver;
-        searchField = driver.findElement(By.id("realbox"));
+        searchField = driver.findElement(By.name("q"));
         startSearch(text);
     }
 
